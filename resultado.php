@@ -1,13 +1,13 @@
 <?php
+session_start();
 
-$resultado = $_SESSION('won')
+$resultado = $_SESSION['won'] ?? false; // Si no existe, toma false por defecto
 
-if ($resultado = true) {
-    echo "Has ganado la partida"
+if ($resultado === true) {
+    echo "Has ganado la partida";
 } else {
-    echo "Has perdido la partida"
+    echo "Has perdido la partida";
 }
-
 ?>
 
 <!doctype html>
@@ -17,8 +17,8 @@ if ($resultado = true) {
 <title>Mastermind Numérico</title>
 </head>
 <body>
-<form action="index.php">
-    <input type="submit">Volver a jugar</input>
+<form action="index.php" method="get">
+    <input type="submit" value="Volver a jugar">
 </form>
 </body>
 </html>
