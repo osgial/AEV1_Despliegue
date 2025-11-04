@@ -1,0 +1,1 @@
+El index gestiona el juego, el resultado te saldra automaticamente en el resultado.php y podras volver a jugar con un boton

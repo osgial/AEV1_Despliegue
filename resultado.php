@@ -14,7 +14,8 @@ if ($resultado === true) {
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>Mastermind Numérico</title>
+<title>AEV1 OscarG</title>
+<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 <form action="index.php" method="get">
