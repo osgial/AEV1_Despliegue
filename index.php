@@ -53,8 +53,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$finished) {
         if ($exact == $NUM_DIGITS) {
             $_SESSION['finished'] = true;
             $_SESSION['won'] = true;
+            header("resultado.php")
         } elseif (count($_SESSION['attempts']) >= $MAX_ATTEMPTS) {
             $_SESSION['finished'] = true;
+            header("resultado.php")
         }
 
         header("Location: index.php");
